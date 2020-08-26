@@ -1,8 +1,20 @@
-
+var deskCommands = {
+    clicknVerif: function (browser, option) {
+        this.click(option.sel)
+        this.verify.elementPresent(option.conf1)
+        this.click('@confirm')
+        this.verify.elementPresent(option.conf2)
+        this.click('@customize')
+        return this
+}
+}
 module.exports = {
     url: 'https://www.upliftdesk.com/',
+    commands: [deskCommands],
     elements: {
         products: { selector: '(//a[@href="/adjustable-height-desks/"])[1]', locateStrategy: 'xpath' },
+        confirm: {selector:'//span[contains(text(), "Confirm Selections")]', locateStrategy: 'xpath'},
+        customize: {selector: '(//span[contains(text(), "Customize Desk")])[1]', locateStrategy: 'xpath'},
         //Desk Selectors
         stand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/890/11640/product-image-thumbnail-v2-standing-desk-upl960__84337.1597247526.jpg?c=2"]', locateStrategy: 'xpath' },
         lamStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/671/11635/product-image-thumbnail-custom-laminate-desk-upl912__99852.1597247156.jpg?c=2"]', locateStrategy: 'xpath' },
@@ -26,6 +38,7 @@ module.exports = {
         sixtyConf: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/1007/11642/product-image-thumbnail-bamboo-ping-pong-table__77210.1597253477.jpg?c=2"]', locateStrategy: 'xpath' },
         degreeStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/519/11643/product-image-thumbmnail-120-desk__25787.1597253937.jpg?c=2"]', locateStrategy: 'xpath' },
         craftStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/774/6871/image-thumbnail-craft-table__96010.1565998720.jpg?c=2"]', locateStrategy: 'xpath' },
+        SKU: { selector: '//span[contains(text(), "SKU")]', locateStrategy: 'xpath' },
         //Desk Mats
         walLam: { selector: '//label[@for="attribute_swatch_4275_4865"]', locateStrategy: 'xpath' },
         whtLam: { selector: '//label[@for="attribute_swatch_4275_4863"]', locateStrategy: 'xpath' },
@@ -53,22 +66,22 @@ module.exports = {
         seventytwobythirty: { selector: '//label[@for="attribute_rectangle__4276_4657"]', locateStrategy: 'xpath' },
         eightybythirty: { selector: '//label[@for="attribute_rectangle__4276_4658"]', locateStrategy: 'xpath' },
         //Frames
-        blkFrame: {selector:'//label[@data-color="black"]', locateStrategy:'xpath'},
+        blkFrame: { selector: '//label[@data-color="black"]', locateStrategy: 'xpath' },
         blkcFrame: { selector: '//label[@for="attribute_productlist_4278_4849"]', locateStrategy: 'xpath' },
         blkcommcFrame: { selector: '//label[@for="attribute_productlist_4278_4853"]', locateStrategy: 'xpath' },
         blktFrame: { selector: '//label[@for="attribute_productlist_4278_7057"]', locateStrategy: 'xpath' },
         blkcommTFrame: { selector: '//label[@for="attribute_productlist_4278_7061"]', locateStrategy: 'xpath' },
-        whtFrame: {selector:'//label[@data-color="white"]', locateStrategy:'xpath'},
+        whtFrame: { selector: '//label[@data-color="white"]', locateStrategy: 'xpath' },
         whtcFrame: { selector: '//label[@data-product-attribute-value="4852"]', locateStrategy: 'xpath' },
         whtcommcFrame: { selector: '//label[@data-product-attribute-value="4856"]', locateStrategy: 'xpath' },
         whttFrame: { selector: '//label[@data-product-attribute-value="7058"]', locateStrategy: 'xpath' },
         whtcommTFrame: { selector: '//label[@data-product-attribute-value="7062"]', locateStrategy: 'xpath' },
-        gryFrame: {selector:'//label[@data-color="gray"]', locateStrategy:'xpath'},
+        gryFrame: { selector: '//label[@data-color="gray"]', locateStrategy: 'xpath' },
         grycFrame: { selector: '//label[@data-product-attribute-value="4851"]', locateStrategy: 'xpath' },
         grycommcFrame: { selector: '//label[@data-product-attribute-value="4855"]', locateStrategy: 'xpath' },
         grytFrame: { selector: '//label[@data-product-attribute-value="7059"]', locateStrategy: 'xpath' },
         grycommTFrame: { selector: '//label[@data-product-attribute-value="7063"]', locateStrategy: 'xpath' },
-        mtlFrame: {selector:'//label[@data-color="metallic"]', locateStrategy:'xpath'},
+        mtlFrame: { selector: '//label[@data-color="metallic"]', locateStrategy: 'xpath' },
         mtlcFrame: { selector: '//label[@data-product-attribute-value="4850"]', locateStrategy: 'xpath' },
         mtlcommcFrame: { selector: '//label[@data-product-attribute-value="4854"]', locateStrategy: 'xpath' },
         mtltFrame: { selector: '//label[@data-product-attribute-value="7060"]', locateStrategy: 'xpath' },
@@ -102,11 +115,11 @@ module.exports = {
         blkDigKey: { selector: '//label[@data-product-attribute-value="4707"]', locateStrategy: 'xpath' },
         blkComKey: { selector: '//label[@data-product-attribute-value="5854"]', locateStrategy: 'xpath' },
         whtKey: { selector: '(//label[@data-color="WHT"])[2]', locateStrategy: 'xpath' },
-        whtDigKey: {selector: '//label[@data-product-attribute-value="4706"]', locateStrategy: 'xpath'},
-        whtComKey: {selector: '//label[@data-product-attribute-value="5855"]', locateStrategy: 'xpath'},
+        whtDigKey: { selector: '//label[@data-product-attribute-value="4706"]', locateStrategy: 'xpath' },
+        whtComKey: { selector: '//label[@data-product-attribute-value="5855"]', locateStrategy: 'xpath' },
         gryKey: { selector: '(//label[@data-color="GRY"])[2]', locateStrategy: 'xpath' },
-        gryDigKey: {selector: '//label[@data-product-attribute-value="4709"]', locateStrategy: 'xpath'},
-        gryComKey: {selector: '//label[@data-product-attribute-value="5856"]', locateStrategy: 'xpath'},
-        
+        gryDigKey: { selector: '//label[@data-product-attribute-value="4709"]', locateStrategy: 'xpath' },
+        gryComKey: { selector: '//label[@data-product-attribute-value="5856"]', locateStrategy: 'xpath' },
+
     }
 }
