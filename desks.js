@@ -1,8 +1,11 @@
 var mat = require('../Desks/Assets/stand/deskTop')
 var sze = require('../Desks/Assets/stand/size')
-var frm = require('../Desks/Assets/stand/frame')
-var grm = require('../Desks/Assets/stand/grommets')
-var key = require('../Desks/Assets/stand/keypad')
+var blkFrm = require('../Desks/Assets/stand/frames/blkFrame')
+var whtFrm = require('../Desks/Assets/stand/frames/whtFrame')
+var gryFrm = require('../Desks/Assets/stand/frames/gryFrame')
+var mtlFrm = require('../Desks/Assets/stand/frames/mtlFrame')
+// var grm = require('')
+// var key = require('')
 const { verify } = require('crypto')
 module.exports = {
     beforeEach: browser => {
@@ -25,6 +28,28 @@ module.exports = {
                 .clicknVerif(desk, item)
             })
             sze.forEach(item=> {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@blkFrame')
+            blkFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtFrame')
+            whtFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@gryFrame')
+            .waitForElementVisible('@noThanks', 60000)
+            .click('@noThanks')
+            gryFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@mtlFrame')
+            mtlFrm.forEach(item => {
                 desk
                 .clicknVerif(desk, item)
             })

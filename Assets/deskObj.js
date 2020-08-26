@@ -1,9 +1,8 @@
 var deskCommands = {
     clicknVerif: function (browser, option) {
         this.click(option.sel)
-        this.verify.elementPresent(option.conf1)
         this.click('@confirm')
-        this.verify.elementPresent(option.conf2)
+        this.verify.elementPresent(option.conf)
         this.click('@customize')
         return this
 }
@@ -15,6 +14,7 @@ module.exports = {
         products: { selector: '(//a[@href="/adjustable-height-desks/"])[1]', locateStrategy: 'xpath' },
         confirm: {selector:'//span[contains(text(), "Confirm Selections")]', locateStrategy: 'xpath'},
         customize: {selector: '(//span[contains(text(), "Customize Desk")])[1]', locateStrategy: 'xpath'},
+        noThanks: {selector: '//a[contains(text(), "No, Thank You")]', locateStrategy: 'xpath'},
         //Desk Selectors
         stand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/890/11640/product-image-thumbnail-v2-standing-desk-upl960__84337.1597247526.jpg?c=2"]', locateStrategy: 'xpath' },
         lamStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/671/11635/product-image-thumbnail-custom-laminate-desk-upl912__99852.1597247156.jpg?c=2"]', locateStrategy: 'xpath' },

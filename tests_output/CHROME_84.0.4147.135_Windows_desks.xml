@@ -5,23 +5,9 @@
 
   <testsuite name="desks"
     errors="0" failures="0" hostname="" id="" package="desks" skipped="0"
-    tests="1" time="49.43" timestamp="">
+    tests="1" time="77.78" timestamp="">
   
-    <testcase name="Desk Mat forEach" classname="desks" time="49.43" assertions="50">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="Desk Mat forEach" classname="desks" time="77.78" assertions="43">
 
     
 
