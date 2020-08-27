@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="desks"
-    errors="0" failures="1" hostname="" id="" package="desks" skipped="0"
-    tests="1" time="86.31" timestamp="">
+    errors="0" failures="0" hostname="" id="" package="desks" skipped="0"
+    tests="1" time="130.1" timestamp="">
   
-    <testcase name="Desk Mat forEach" classname="desks" time="86.31" assertions="68">
+    <testcase name="UPL 912" classname="desks" time="130.1" assertions="91">
 
     
 
@@ -117,10 +117,53 @@
 
     
 
-      <failure message="Testing if element &lt;Element [name=@gryTwoWireVer]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5368ms)">    at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
-    at E:\DevMountain\AllAutomation\Desks\desks.js:74:18
-    at Array.forEach (&lt;anonymous&gt;)
-    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:72:20)</failure>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
