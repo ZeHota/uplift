@@ -4,8 +4,12 @@ var blkFrm = require('../Desks/Assets/stand/frames/blkFrame')
 var whtFrm = require('../Desks/Assets/stand/frames/whtFrame')
 var gryFrm = require('../Desks/Assets/stand/frames/gryFrame')
 var mtlFrm = require('../Desks/Assets/stand/frames/mtlFrame')
-// var grm = require('')
-// var key = require('')
+var blkGrm = require('../Desks/Assets/stand/grommets/blkGrommets')
+var gryGrm = require('../Desks/Assets/stand/grommets/gryGrommets')
+var whtGrm = require('../Desks/Assets/stand/grommets/whtGrommets')
+var blkKey = require('../Desks/Assets/stand/keys/blkKey')
+var whtKey = require('../Desks/Assets/stand/keys/whtKey')
+var gryKey = require('../Desks/Assets/stand/keys/gryKey')
 const { verify } = require('crypto')
 module.exports = {
     beforeEach: browser => {
@@ -41,15 +45,45 @@ module.exports = {
                 desk
                 .clicknVerif(desk, item)
             })
-            desk.click('@gryFrame')
+            desk
             .waitForElementVisible('@noThanks', 60000)
             .click('@noThanks')
+            .click('@gryFrame')
             gryFrm.forEach(item => {
                 desk
                 .clicknVerif(desk, item)
             })
             desk.click('@mtlFrame')
             mtlFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@blkGromm')
+            blkGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtGromm')
+            whtGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@gryGromm')
+            gryGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            blkKey.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtKey')
+            whtKey.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@gryKey')
+            gryKey.forEach(item => {
                 desk
                 .clicknVerif(desk, item)
             })

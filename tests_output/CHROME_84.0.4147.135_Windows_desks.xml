@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
+<testsuites errors="4"
+            failures="4"
             tests="1">
 
   <testsuite name="desks"
-    errors="0" failures="0" hostname="" id="" package="desks" skipped="0"
-    tests="1" time="77.78" timestamp="">
+    errors="4" failures="4" hostname="" id="" package="desks" skipped="0"
+    tests="1" time="118.1" timestamp="">
   
-    <testcase name="Desk Mat forEach" classname="desks" time="77.78" assertions="43">
+    <testcase name="Desk Mat forEach" classname="desks" time="118.1" assertions="67">
 
     
 
@@ -85,6 +85,32 @@
 
     
 
+      <failure message="Testing if element &lt;//span[contains(text(), &#34;V2 C-Frame - Metallic&#34;)]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5519ms)">    at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
+    at E:\DevMountain\AllAutomation\Desks\desks.js:59:18
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:57:20)</failure>
+
+      <failure message="Testing if element &lt;//span[contains(text(), &#34; V2-Commercial C-Frame - Metallic&#34;)]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5435ms)">    at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
+    at E:\DevMountain\AllAutomation\Desks\desks.js:59:18
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:57:20)</failure>
+
+      <failure message="Testing if element &lt;//span[contains(text(), &#34;V2 T-Frame - Metallic&#34;)]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5423ms)">    at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
+    at E:\DevMountain\AllAutomation\Desks\desks.js:59:18
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:57:20)</failure>
+
+      <failure message="Testing if element &lt;//span[contains(text(), &#34;V2-Commercial T-Frame - Metallic&#34;)]&gt; is present in 5000ms - expected &#34;is present&#34; but got: &#34;not present&#34; (5390ms)">    at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
+    at E:\DevMountain\AllAutomation\Desks\desks.js:59:18
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:57:20)</failure>
+
+    
+
+    
+
+    
+
     
 
     
@@ -93,10 +119,70 @@
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <error message="Error while running &#34;elementPresent&#34; command: Testing if element [0;33m&lt;//span[contains(text(), &#34;V2-Commercial T-Frame - Metallic&#34;)]&gt;[0m is present in 5000ms - expected [0;32m&#34;is present&#34;[0m but got: [0;31m&#34;not present&#34;[0m [0;90m(5390ms)[0m" type="error"><![CDATA[
+        at Page.clicknVerif (E:\DevMountain\AllAutomation\Desks\assets\deskObj.js:5:21)
+    at E:\DevMountain\AllAutomation\Desks\desks.js:59:18
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Desk Mat forEach (E:\DevMountain\AllAutomation\Desks\desks.js:57:20)
+    ]]></error>
     
     </testcase>
   
 
+  
+    <system-err>
+        TimeoutError: An error occurred while running .click() command on &lt;Element [name=@mtlcFrame]&gt;:   (Session info: chrome=84.0.4147.135),  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64); element not interactable
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element not interactable&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=84.0.4147.135)&#34;,&#34;  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64)&#34;]},&#34;errorStatus&#34;:11,&#34;error&#34;:&#34;element not interactable&#34;,&#34;httpStatusCode&#34;:200}
+       at runMicrotasks (&lt;anonymous&gt;)
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+  TimeoutError: An error occurred while running .click() command on &lt;Element [name=@mtlcommcFrame]&gt;:   (Session info: chrome=84.0.4147.135),  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64); element not interactable
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element not interactable&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=84.0.4147.135)&#34;,&#34;  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64)&#34;]},&#34;errorStatus&#34;:11,&#34;error&#34;:&#34;element not interactable&#34;,&#34;httpStatusCode&#34;:200}
+       at runMicrotasks (&lt;anonymous&gt;)
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+  TimeoutError: An error occurred while running .click() command on &lt;Element [name=@mtltFrame]&gt;:   (Session info: chrome=84.0.4147.135),  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64); element not interactable
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element not interactable&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=84.0.4147.135)&#34;,&#34;  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64)&#34;]},&#34;errorStatus&#34;:11,&#34;error&#34;:&#34;element not interactable&#34;,&#34;httpStatusCode&#34;:200}
+       at runMicrotasks (&lt;anonymous&gt;)
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+  TimeoutError: An error occurred while running .click() command on &lt;Element [name=@mtlcommTFrame]&gt;:   (Session info: chrome=84.0.4147.135),  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64); element not interactable
+   {&#34;status&#34;:-1,&#34;state&#34;:&#34;&#34;,&#34;value&#34;:{&#34;message&#34;:&#34;element not interactable&#34;,&#34;error&#34;:[&#34;  (Session info: chrome=84.0.4147.135)&#34;,&#34;  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.19041 x86_64)&#34;]},&#34;errorStatus&#34;:11,&#34;error&#34;:&#34;element not interactable&#34;,&#34;httpStatusCode&#34;:200}
+       at runMicrotasks (&lt;anonymous&gt;)
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    </system-err>
   
 
     
