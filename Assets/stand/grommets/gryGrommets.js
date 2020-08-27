@@ -1,8 +1,8 @@
 module.exports = [
-    {sel: '@gryTwoWire', conf: '//span[contains(text(), "Two Wire Grommets - Gray")]'}, 
-    {sel: '@gryOneWireOnePower', conf: '//span[contains(text(), " One Wire Grommet and One Power Grommet - Gray")]'}, 
-    {sel: '@gryTwoPower', conf: '//span[contains(text(), " Two Power Grommets - Gray")]'}, 
-    {sel: '@gryOneStorOneWire', conf: '//span[contains(text(), " One Storage and One Wire Grommet - Gray")]'}, 
-    {sel: '@gryTwoStore', conf: '//span[contains(text(), " Two Storage Grommets - Gray")]'}, 
-    {sel: '@gryOneStoreOnePower', conf: '//span[contains(text(), " One Storage and One Power Grommet - Gray")]'},
+    {sel: '@gryTwoWire', conf: '@gryTwoWireVer'}, 
+    {sel: '@gryOneWireOnePower', conf: '@gryOneWireOnePowerVer'}, 
+    {sel: '@gryTwoPower', conf: '@gryTwoPowerVer'}, 
+    {sel: '@gryOneStorOneWire', conf: '@gryOneStorOneWireVer'}, 
+    {sel: '@gryTwoStore', conf: '@gryTwoStoreVer'}, 
+    {sel: '@gryOneStoreOnePower', conf: '@gryOneStoreOnePowerVer'},
 ]

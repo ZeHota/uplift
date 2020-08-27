@@ -26,7 +26,7 @@ module.exports = {
             .click('@products')
             .click('@stand')
             .waitForElementPresent('@SKU', 20000)
-            .verify.containsText('//span[contains(text(), "UPL960")]', 'UPL960')
+            .verify.containsText('@UPL960', 'UPL960')
             mat.forEach(item=> {
                 desk
                 .clicknVerif(desk, item)
