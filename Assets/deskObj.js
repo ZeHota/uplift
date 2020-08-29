@@ -6,7 +6,9 @@ var deskCommands = {
         this.click('@customize')
         return this
 }
+
 }
+
 module.exports = {
     url: 'https://www.upliftdesk.com/',
     commands: [deskCommands],

@@ -22,6 +22,19 @@ var lamwhtGrm = require('../Desks/Assets/lamStand/grommets/whtGrommets')
 var lamblkKey = require('../Desks/Assets/lamStand/keys/blkKey')
 var lamwhtKey = require('../Desks/Assets/lamStand/keys/whtKey')
 var lamgryKey = require('../Desks/Assets/lamStand/keys/gryKey')
+var lmat =    require('../Desks/Assets/stand/deskTop')
+var lsze =    require('../Desks/Assets/stand/size')
+var lblkFrm = require('../Desks/Assets/stand/frames/blkFrame')
+var lwhtFrm = require('../Desks/Assets/stand/frames/whtFrame')
+var lgryFrm = require('../Desks/Assets/stand/frames/gryFrame')
+var lmtlFrm = require('../Desks/Assets/stand/frames/mtlFrame')
+var lblkGrm = require('../Desks/Assets/stand/grommets/blkGrommets')
+var lgryGrm = require('../Desks/Assets/stand/grommets/gryGrommets')
+var lwhtGrm = require('../Desks/Assets/stand/grommets/whtGrommets')
+var lblkKey = require('../Desks/Assets/stand/keys/blkKey')
+var lwhtKey = require('../Desks/Assets/stand/keys/whtKey')
+var lgryKey = require('../Desks/Assets/stand/keys/gryKey')
+
 const { verify } = require('crypto')
 module.exports = {
     beforeEach: browser => {
@@ -110,12 +123,13 @@ module.exports = {
                 lamDesk
                 .clicknVerif(lamDesk, item)
             })
-            lamDesk.waitForElementVisible('@noThanks', 60000)
-            .click('@noThanks')
+            
             lamsze.forEach(item=> {
                 lamDesk
                 .clicknVerif(lamDesk, item)
             })
+            lamDesk.waitForElementVisible('@noThanks', 60000)
+            .click('@noThanks')
             lamDesk.click('@blkFrame')
             lamblkFrm.forEach(item => {
                 lamDesk
