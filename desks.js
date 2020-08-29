@@ -47,141 +47,141 @@ module.exports = {
     after: browser => {
         desk.end()
     },
-    // 'UPL960': browser => {
-    //     desk
-    //         .click('@products')
-    //         .click('@stand')
-    //         .waitForElementPresent('@SKU', 20000)
-    //         .verify.containsText('@UPL960', 'UPL960')
-    //         mat.forEach(item=> {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         sze.forEach(item=> {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@blkFrame')
-    //         blkFrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@whtFrame')
-    //         whtFrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk
-    //         .waitForElementVisible('@noThanks', 60000)
-    //         .click('@noThanks')
-    //         .click('@gryFrame')
-    //         gryFrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@mtlFrame')
-    //         mtlFrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@blkGromm')
-    //         blkGrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@whtGromm')
-    //         whtGrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@gryGromm')
-    //         gryGrm.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         blkKey.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@whtKey')
-    //         whtKey.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    //         desk.click('@gryKey')
-    //         gryKey.forEach(item => {
-    //             desk
-    //             .clicknVerif(desk, item)
-    //         })
-    // },
-    // 'UPL 912': browser => {
-    //     lamDesk
-    //     .click('@products')
-    //         .click('@lamStand')
-    //         .waitForElementPresent('@SKU', 20000)
-    //         .verify.containsText('@UPL912', 'UPL912')
-    //         lammat.forEach(item=> {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
+    'UPL960': browser => {
+        desk
+            .click('@products')
+            .click('@stand')
+            .waitForElementPresent('@SKU', 20000)
+            .verify.containsText('@UPL960', 'UPL960')
+            mat.forEach(item=> {
+                desk
+                .clicknVerif(desk, item)
+            })
+            sze.forEach(item=> {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@blkFrame')
+            blkFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtFrame')
+            whtFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk
+            .waitForElementVisible('@noThanks', 60000)
+            .click('@noThanks')
+            .click('@gryFrame')
+            gryFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@mtlFrame')
+            mtlFrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@blkGromm')
+            blkGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtGromm')
+            whtGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@gryGromm')
+            gryGrm.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            blkKey.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@whtKey')
+            whtKey.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+            desk.click('@gryKey')
+            gryKey.forEach(item => {
+                desk
+                .clicknVerif(desk, item)
+            })
+    },
+    'UPL 912': browser => {
+        lamDesk
+        .click('@products')
+            .click('@lamStand')
+            .waitForElementPresent('@SKU', 20000)
+            .verify.containsText('@UPL912', 'UPL912')
+            lammat.forEach(item=> {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
             
-    //         lamsze.forEach(item=> {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.waitForElementVisible('@noThanks', 60000)
-    //         .click('@noThanks')
-    //         lamDesk.click('@blkFrame')
-    //         lamblkFrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@whtFrame')
-    //         lamwhtFrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk
-    //         .click('@gryFrame')
-    //         lamgryFrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@mtlFrame')
-    //         lammtlFrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@blkGromm')
-    //         lamblkGrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@whtGromm')
-    //         lamwhtGrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@gryGromm')
-    //         lamgryGrm.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamblkKey.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@whtKey')
-    //         lamwhtKey.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    //         lamDesk.click('@gryKey')
-    //         lamgryKey.forEach(item => {
-    //             lamDesk
-    //             .clicknVerif(lamDesk, item)
-    //         })
-    // },
+            lamsze.forEach(item=> {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.waitForElementVisible('@noThanks', 60000)
+            .click('@noThanks')
+            lamDesk.click('@blkFrame')
+            lamblkFrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@whtFrame')
+            lamwhtFrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk
+            .click('@gryFrame')
+            lamgryFrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@mtlFrame')
+            lammtlFrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@blkGromm')
+            lamblkGrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@whtGromm')
+            lamwhtGrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@gryGromm')
+            lamgryGrm.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamblkKey.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@whtKey')
+            lamwhtKey.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+            lamDesk.click('@gryKey')
+            lamgryKey.forEach(item => {
+                lamDesk
+                .clicknVerif(lamDesk, item)
+            })
+    },
     'UPL934': browser => {
         lDesk
         .click('@products')
