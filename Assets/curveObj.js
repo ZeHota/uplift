@@ -6,7 +6,9 @@ var deskCommands = {
         this.click('@customize')
         return this
     }
+
 }
+
 module.exports = {
     url: 'https://www.upliftdesk.com/',
     commands: [deskCommands],
@@ -16,25 +18,19 @@ module.exports = {
         customize: { selector: '(//span[contains(text(), "Customize Desk")])[1]', locateStrategy: 'xpath' },
         noThanks: { selector: '//a[contains(text(), "No, Thank You")]', locateStrategy: 'xpath' },
         SKU: { selector: '//span[contains(text(), "SKU")]', locateStrategy: 'xpath' },
-        //Desk Selector
-        lStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/859/11636/product-image-thumbnail-l-shape-desk-upl934__78529.1597247323.jpg?c=2"]', locateStrategy: 'xpath' },
+        //Desk Selectors
+        curveStand: { selector: '//img[@src="https://cdn11.bigcommerce.com/s-l85bzww3lo/images/stencil/361x195/products/269/11634/product-image-thumbnail-curved-corner-upl933__78692.1597246960.jpg?c=2"]', locateStrategy: 'xpath' },
         //Desk Mats
-        walLam: { selector: '//label[@data-product-attribute-value="4764"]', locateStrategy: 'xpath' },
-        whtLam: { selector: '//label[@data-product-attribute-value="4763"]', locateStrategy: 'xpath' },
-        blkLam: { selector: '//label[@data-product-attribute-value="4762"]', locateStrategy: 'xpath' },
-        carbBamLam: { selector: '//label[@data-product-attribute-value="4757"]', locateStrategy: 'xpath' },
-        natRbr: { selector: '//label[@data-product-attribute-value="4760"]', locateStrategy: 'xpath' },
-        //Desk Sizes
-        s6732: { selector: '//label[@data-product-attribute-value="4753"]', locateStrategy: 'xpath' },
-        s7732: { selector: '//label[@data-product-attribute-value="4754"]', locateStrategy: 'xpath' },
-        s8732: { selector: '//label[@data-product-attribute-value="4755"]', locateStrategy: 'xpath' },
+        blkEco: { selector: '//label[@data-product-attribute-value="1594"]', locateStrategy: 'xpath' },
+        whtEco: { selector: '//label[@data-product-attribute-value="1598"]', locateStrategy: 'xpath' },
+        bamboo: { selector: '//label[@data-product-attribute-value="4769"]', locateStrategy: 'xpath' },
         //Frames
         blkFrame: { selector: '//label[@data-color="black"]', locateStrategy: 'xpath' },
-        blkCFrame: { selector: '//label[@data-product-attribute-value="5175"]', locateStrategy: 'xpath' },
-        blkCommCFrame: { selector: '//label[@data-product-attribute-value="5179"]', locateStrategy: 'xpath' },
+        blkCFrame: { selector: '//label[@data-product-attribute-value="5824"]', locateStrategy: 'xpath' },
+        blkCommCFrame: { selector: '//label[@data-product-attribute-value="5828"]', locateStrategy: 'xpath' },
         whtFrame: { selector: '//label[@data-color="white"]', locateStrategy: 'xpath' },
-        whtCFrame: { selector: '//label[@data-product-attribute-value="5177"]', locateStrategy: 'xpath' },
-        whtCommCFrame: { selector: '//label[@data-product-attribute-value="5181"]', locateStrategy: 'xpath' },
+        whtCFrame: { selector: '//label[@data-product-attribute-value="5827"]', locateStrategy: 'xpath' },
+        whtCommCFrame: { selector: '//label[@data-product-attribute-value="5831"]', locateStrategy: 'xpath' },
         gryFrame: { selector: '//label[@data-color="gray"]', locateStrategy: 'xpath' },
         gryCFrame: { selector: '//label[@data-product-attribute-value="5826"]', locateStrategy: 'xpath' },
         gryCommCFrame: { selector: '//label[@data-product-attribute-value="5830"]', locateStrategy: 'xpath' },
@@ -77,17 +73,11 @@ module.exports = {
 
         //Verifs
         //Desks
-        UPL934: { selector: '//span[contains(text(), "UPL934")]', locateStrategy: 'xpath' },
+        UPL933: { selector: '//span[contains(text(), "UPL933")]', locateStrategy: 'xpath' },
         //Mats
-        walLamVer: { selector: '(//span[contains(text(), "Walnut - Laminate")])[2]', locateStrategy: 'xpath' },
-        whtLamVer: { selector: '(//span[contains(text(), "White - Laminate")])[2]', locateStrategy: 'xpath' },
-        blkLamVer: { selector: '(//span[contains(text(), "Black - Laminate")])[2]', locateStrategy: 'xpath' },
-        carbBamLamVer: { selector: '(//span[contains(text(), "Carbonized - Bamboo")])[2]', locateStrategy: 'xpath' },
-        natRbrVer: { selector: '(//span[contains(text(), "Natural - Rubberwood - Solid Wood")])[2]', locateStrategy: 'xpath' },
-        //Sizes
-        ver6732: { selector: `//span[contains(text(), '60" W x 78" W x 30" D x 27" D')]`, locateStrategy: 'xpath' },
-        ver7732: { selector: `//span[contains(text(), '72" W x 78" W x 30" D x 27" D')]`, locateStrategy: 'xpath' },
-        ver8732: { selector: `//span[contains(text(), '80" W x 78" W x 30" D x 27" D')]`, locateStrategy: 'xpath' },
+        blkEcoVer: {selector: '(//span[contains(text(), "Black - Eco")])[2]', locateStrategy: 'xpath'},
+        whtEcoVer: {selector: '(//span[contains(text(), "White - Eco")])[2]', locateStrategy: 'xpath'},
+        bambooVer: {selector: '(//span[contains(text(), "Carbonized - Bamboo")])[2]', locateStrategy: 'xpath'},
         //Frames
         blkCFrameVer: { selector: '//span[contains(text(), "V2 C-Frame - Black")]', locateStrategy: 'xpath' },
         blkCommCFrameVer: { selector: '//span[contains(text(), "V2-Commercial C-Frame - Black")]', locateStrategy: 'xpath' },
@@ -124,5 +114,6 @@ module.exports = {
         whtComKeyVer: { selector: '//span[contains(text(), "Comfort Keypad - White")]', locateStrategy: 'xpath' },
         gryDigKeyVer: { selector: '//span[contains(text(), "Memory Keypad - Gray")]', locateStrategy: 'xpath' },
         gryComKeyVer: { selector: '//span[contains(text(), "Comfort Keypad - Gray")]', locateStrategy: 'xpath' },
+
     }
 }

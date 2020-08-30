@@ -34,6 +34,17 @@ var lwhtGrm = require('../Desks/Assets/lDesk/grommets/whtGrommets')
 var lblkKey = require('../Desks/Assets/lDesk/keys/blkKey')
 var lwhtKey = require('../Desks/Assets/lDesk/keys/whtKey')
 var lgryKey = require('../Desks/Assets/lDesk/keys/gryKey')
+var curvemat =    require('../Desks/Assets/curveDesk/deskTop')
+var curveblkFrm = require('../Desks/Assets/curveDesk/frames/blkFrame')
+var curvewhtFrm = require('../Desks/Assets/curveDesk/frames/whtFrame')
+var curvegryFrm = require('../Desks/Assets/curveDesk/frames/gryFrame')
+var curvemtlFrm = require('../Desks/Assets/curveDesk/frames/mtlFrame')
+var curveblkGrm = require('../Desks/Assets/curveDesk/grommets/blkGrommets')
+var curvegryGrm = require('../Desks/Assets/curveDesk/grommets/gryGrommets')
+var curvewhtGrm = require('../Desks/Assets/curveDesk/grommets/whtGrommets')
+var curveblkKey = require('../Desks/Assets/curveDesk/keys/blkKey')
+var curvewhtKey = require('../Desks/Assets/curveDesk/keys/whtKey')
+var curvegryKey = require('../Desks/Assets/curveDesk/keys/gryKey')
 
 const { verify } = require('crypto')
 module.exports = {
@@ -41,6 +52,7 @@ module.exports = {
         desk = browser.page.deskObj()
         lamDesk = browser.page.lamStandObj()
         lDesk = browser.page.lDeskObj()
+        curveDesk = browser.page.curveObj()
         desk.navigate()
         browser.maximizeWindow()
     },
@@ -246,6 +258,67 @@ module.exports = {
             lgryKey.forEach(item => {
                 lDesk
                 .clicknVerif(lDesk, item)
+            })
+    },
+    'UPL933': browser => {
+        curveDesk
+            .click('@products')
+            .click('@curveStand')
+            .waitForElementPresent('@SKU', 20000)
+            .verify.containsText('@UPL933', 'UPL933')
+            curvemat.forEach(item=> {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@blkFrame')
+            curveblkFrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@whtFrame')
+            curvewhtFrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk
+            .click('@gryFrame')
+            curvegryFrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@mtlFrame')
+            curvemtlFrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@blkGromm')
+            curveblkGrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@whtGromm')
+            curvewhtGrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@gryGromm')
+            curvegryGrm.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveblkKey.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@whtKey')
+            curvewhtKey.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
+            })
+            curveDesk.click('@gryKey')
+            curvegryKey.forEach(item => {
+                curveDesk
+                .clicknVerif(curveDesk, item)
             })
     },
 }
