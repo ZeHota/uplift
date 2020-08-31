@@ -1,67 +1,66 @@
-// 'UPL941': browser => {
-//     fourDesk
+// 'UPL931': browser => {
+//     lamLDesk
 //         .click('@products')
-//         .click('@stand')
+//         .getElementInView()
+//         .click('@lamLDesk')
 //         .waitForElementPresent('@SKU', 20000)
-//         .verify.containsText('@UPL941', 'UPL941')
-//         fourmat.forEach(item=> {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         .verify.containsText('@UPL931', 'UPL931')
+//         lamLmat.forEach(item=> {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         foursze.forEach(item=> {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLsze.forEach(item=> {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@blkFrame')
-//         fourblkFrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@blkFrame')
+//         lamLblkFrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@whtFrame')
-//         fourwhtFrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@whtFrame')
+//         lamLwhtFrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk
-//         .waitForElementVisible('@noThanks', 60000)
-//         .click('@noThanks')
+//         lamLDesk
 //         .click('@gryFrame')
-//         fourgryFrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLgryFrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@mtlFrame')
-//         fourmtlFrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@mtlFrame')
+//         lamLmtlFrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@blkGromm')
-//         fourblkGrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@blkGromm')
+//         lamLblkGrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@whtGromm')
-//         fourwhtGrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@whtGromm')
+//         lamLwhtGrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@gryGromm')
-//         fourgryGrm.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@gryGromm')
+//         lamLgryGrm.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourblkKey.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLblkKey.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@whtKey')
-//         fourwhtKey.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@whtKey')
+//         lamLwhtKey.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
-//         fourDesk.click('@gryKey')
-//         fourgryKey.forEach(item => {
-//             fourDesk
-//             .clicknVerif(fourDesk, item)
+//         lamLDesk.click('@gryKey')
+//         lamLgryKey.forEach(item => {
+//             lamLDesk
+//             .clicknVerif(lamLDesk, item)
 //         })
 // },

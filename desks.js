@@ -1,5 +1,5 @@
-var mat = require('../Desks/Assets/stand/deskTop')
-var sze = require('../Desks/Assets/stand/size')
+var mat =    require('../Desks/Assets/stand/deskTop')
+var sze =    require('../Desks/Assets/stand/size')
 var blkFrm = require('../Desks/Assets/stand/frames/blkFrame')
 var whtFrm = require('../Desks/Assets/stand/frames/whtFrame')
 var gryFrm = require('../Desks/Assets/stand/frames/gryFrame')
@@ -57,7 +57,18 @@ var fourwhtGrm = require('../Desks/Assets/fourDesk/grommets/whtGrommets')
 var fourblkKey = require('../Desks/Assets/fourDesk/keys/blkKey')
 var fourwhtKey = require('../Desks/Assets/fourDesk/keys/whtKey')
 var fourgryKey = require('../Desks/Assets/fourDesk/keys/gryKey')
-
+var lamLmat =    require('../Desks/Assets/lamLDesk/deskTop')
+var lamLsze =    require('../Desks/Assets/lamLDesk/size')
+var lamLblkFrm = require('../Desks/Assets/lamLDesk/frames/blkFrame')
+var lamLwhtFrm = require('../Desks/Assets/lamLDesk/frames/whtFrame')
+var lamLgryFrm = require('../Desks/Assets/lamLDesk/frames/gryFrame')
+var lamLmtlFrm = require('../Desks/Assets/lamLDesk/frames/mtlFrame')
+var lamLblkGrm = require('../Desks/Assets/lamLDesk/grommets/blkGrommets')
+var lamLgryGrm = require('../Desks/Assets/lamLDesk/grommets/gryGrommets')
+var lamLwhtGrm = require('../Desks/Assets/lamLDesk/grommets/whtGrommets')
+var lamLblkKey = require('../Desks/Assets/lamLDesk/keys/blkKey')
+var lamLwhtKey = require('../Desks/Assets/lamLDesk/keys/whtKey')
+var lamLgryKey = require('../Desks/Assets/lamLDesk/keys/gryKey')
 const { verify } = require('crypto')
 module.exports = {
     beforeEach: browser => {
@@ -66,6 +77,7 @@ module.exports = {
         lDesk = browser.page.lDeskObj()
         curveDesk = browser.page.curveObj()
         fourDesk = browser.page.fourDeskObj()
+        lamLDesk = browser.page.lamLDeskObj()
         desk.navigate()
         browser.maximizeWindow()
     },
@@ -401,6 +413,72 @@ module.exports = {
             fourgryKey.forEach(item => {
                 fourDesk
                 .clicknVerif(fourDesk, item)
+            })
+    },
+    'UPL931': browser => {
+        lamLDesk
+            .click('@products')
+            .getLocationInView('@stand')
+            .click('@lamLDesk')
+            .waitForElementPresent('@SKU', 20000)
+            .verify.containsText('@UPL931', 'UPL931')
+            lamLmat.forEach(item=> {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLsze.forEach(item=> {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@blkFrame')
+            lamLblkFrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@whtFrame')
+            lamLwhtFrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk
+            .click('@gryFrame')
+            lamLgryFrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@mtlFrame')
+            lamLmtlFrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@blkGromm')
+            lamLblkGrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@whtGromm')
+            lamLwhtGrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@gryGromm')
+            lamLgryGrm.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLblkKey.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@whtKey')
+            lamLwhtKey.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
+            })
+            lamLDesk.click('@gryKey')
+            lamLgryKey.forEach(item => {
+                lamLDesk
+                .clicknVerif(lamLDesk, item)
             })
     },
 }

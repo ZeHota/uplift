@@ -5,59 +5,9 @@
 
   <testsuite name="desks"
     errors="0" failures="0" hostname="" id="" package="desks" skipped="0"
-    tests="1" time="93.06" timestamp="">
+    tests="1" time="61.84" timestamp="">
   
-    <testcase name="UPL941" classname="desks" time="93.06" assertions="73">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="UPL931" classname="desks" time="61.84" assertions="48">
 
     
 
