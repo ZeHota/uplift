@@ -1,67 +1,67 @@
-'UPL933': browser => {
-    curveDesk
-        .click('@products')
-        .click('@stand')
-        .waitForElementPresent('@SKU', 20000)
-        .verify.containsText('@UPL933', 'UPL933')
-        mat.forEach(item=> {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        sze.forEach(item=> {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@blkFrame')
-        blkFrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@whtFrame')
-        whtFrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk
-        .waitForElementVisible('@noThanks', 60000)
-        .click('@noThanks')
-        .click('@gryFrame')
-        gryFrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@mtlFrame')
-        mtlFrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@blkGromm')
-        blkGrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@whtGromm')
-        whtGrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@gryGromm')
-        gryGrm.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        blkKey.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@whtKey')
-        whtKey.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-        curveDesk.click('@gryKey')
-        gryKey.forEach(item => {
-            curveDesk
-            .clicknVerif(curveDesk, item)
-        })
-},
+// 'UPL941': browser => {
+//     fourDesk
+//         .click('@products')
+//         .click('@stand')
+//         .waitForElementPresent('@SKU', 20000)
+//         .verify.containsText('@UPL941', 'UPL941')
+//         fourmat.forEach(item=> {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         foursze.forEach(item=> {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@blkFrame')
+//         fourblkFrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@whtFrame')
+//         fourwhtFrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk
+//         .waitForElementVisible('@noThanks', 60000)
+//         .click('@noThanks')
+//         .click('@gryFrame')
+//         fourgryFrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@mtlFrame')
+//         fourmtlFrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@blkGromm')
+//         fourblkGrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@whtGromm')
+//         fourwhtGrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@gryGromm')
+//         fourgryGrm.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourblkKey.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@whtKey')
+//         fourwhtKey.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+//         fourDesk.click('@gryKey')
+//         fourgryKey.forEach(item => {
+//             fourDesk
+//             .clicknVerif(fourDesk, item)
+//         })
+// },
